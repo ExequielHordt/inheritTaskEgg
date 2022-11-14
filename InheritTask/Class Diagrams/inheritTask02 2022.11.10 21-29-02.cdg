@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="inheritTask02">
+  <ClassDiagramComponents>
+    <Class name="Appliance" package="inherittask02.entity" visibility="public" xPosition="215.0" yPosition="196.0">
+      <Fields>
+        <Field name="price" type="Double" visibility="protected"/>
+        <Field name="colour" type="String" visibility="protected"/>
+        <Field name="energyConsumption" type="char" visibility="protected"/>
+        <Field name="weight" type="Double" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Double" name="price"/>
+          <Argument type="String" name="colour"/>
+          <Argument type="char" name="energyConsumption"/>
+          <Argument type="Double" name="weight"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPrice" returnType="Double" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="Double" name="price"/>
+        </Method>
+        <Method name="getColour" returnType="String" visibility="public"/>
+        <Method name="setColour" returnType="void" visibility="public">
+          <Argument type="String" name="colour"/>
+        </Method>
+        <Method name="getEnergyConsumption" returnType="char" visibility="public"/>
+        <Method name="setEnergyConsumption" returnType="void" visibility="public">
+          <Argument type="char" name="energyConsumption"/>
+        </Method>
+        <Method name="getWeight" returnType="Double" visibility="public"/>
+        <Method name="setWeight" returnType="void" visibility="public">
+          <Argument type="Double" name="weight"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Television" package="inherittask02.entity" visibility="public" xPosition="20.0" yPosition="753.0">
+      <Fields>
+        <Field name="resolution" type="Integer" visibility="private"/>
+        <Field name="tuner" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="resolution"/>
+          <Argument type="Double" name="price"/>
+          <Argument type="String" name="colour"/>
+          <Argument type="char" name="energyConsumption"/>
+          <Argument type="Double" name="weight"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getResolution" returnType="Integer" visibility="public"/>
+        <Method name="setResolution" returnType="void" visibility="public">
+          <Argument type="Integer" name="resolution"/>
+        </Method>
+        <Method name="isTuner" returnType="boolean" visibility="public"/>
+        <Method name="setTuner" returnType="void" visibility="public">
+          <Argument type="boolean" name="tuner"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="WashingMachine" package="inherittask02.entity" visibility="public" xPosition="1134.0" yPosition="753.0">
+      <Fields>
+        <Field name="heaviness" type="Double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Double" name="heaviness"/>
+          <Argument type="Double" name="price"/>
+          <Argument type="String" name="colour"/>
+          <Argument type="char" name="energyConsumption"/>
+          <Argument type="Double" name="weight"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getHeaviness" returnType="Double" visibility="public"/>
+        <Method name="setHeaviness" returnType="void" visibility="public">
+          <Argument type="Double" name="heaviness"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="InheritTask02" package="inherittask02" visibility="public" xPosition="388.0" yPosition="32.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InheritTask03" package="inherittask02" visibility="public" xPosition="649.0" yPosition="32.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="arg"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ApplianceService" package="inherittask02.service" visibility="public" isAbstract="true" xPosition="1366.0" yPosition="196.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="verifyEnergyConsumption" returnType="char" visibility="private">
+          <Argument type="char" name="letter"/>
+        </Method>
+        <Method name="verifyColour" returnType="String" visibility="private">
+          <Argument type="String" name="colour"/>
+        </Method>
+        <Method name="createAppliance" returnType="void" visibility="protected">
+          <Argument type="Appliance" name="appliance"/>
+        </Method>
+        <Method name="finalPrice" returnType="void" visibility="protected">
+          <Argument type="Appliance" name="appliance"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainService" package="inherittask02.service" visibility="public" xPosition="199.0" yPosition="32.0">
+      <Fields>
+        <Field name="read" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="menu" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TelevisionService" package="inherittask02.service" visibility="public" xPosition="1585.0" yPosition="486.0">
+      <Fields>
+        <Field name="read" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="createTelevision" returnType="Television" visibility="public"/>
+        <Method name="finalPrice" returnType="void" visibility="public">
+          <Argument type="Television" name="television"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="WashingMachine_Service" package="inherittask02.service" visibility="public" xPosition="968.0" yPosition="486.0">
+      <Fields>
+        <Field name="read" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="createWashingMachine" returnType="WashingMachine" visibility="public"/>
+        <Method name="finalPrice" returnType="void" visibility="public">
+          <Argument type="WashingMachine" name="washingMachine"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Enum name="Colour" package="inherittask02.Lists" visibility="public" xPosition="888.0" yPosition="39.0">
+      <Literals>
+        <Literal name="WHITE"/>
+        <Literal name="BLACK"/>
+        <Literal name="RED"/>
+        <Literal name="BLUE"/>
+        <Literal name="GREY"/>
+      </Literals>
+    </Enum>
+    <Enum name="EnergyConsumption" package="inherittask02.Lists" visibility="public" xPosition="1134.0" yPosition="39.0">
+      <Literals>
+        <Literal name="A"/>
+        <Literal name="B"/>
+        <Literal name="C"/>
+        <Literal name="D"/>
+        <Literal name="E"/>
+        <Literal name="F"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="inherittask02.service.TelevisionService" target="inherittask02.service.ApplianceService"/>
+    <UseRelation source="inherittask02.service.TelevisionService" target="inherittask02.entity.Television" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="inherittask02.service.WashingMachine_Service" target="inherittask02.service.ApplianceService"/>
+    <IsRelation name="is" source="inherittask02.entity.WashingMachine" target="inherittask02.entity.Appliance"/>
+    <IsRelation name="is" source="inherittask02.entity.Television" target="inherittask02.entity.Appliance"/>
+    <UseRelation source="inherittask02.service.WashingMachine_Service" target="inherittask02.entity.WashingMachine" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="inherittask02.service.ApplianceService" target="inherittask02.entity.Appliance" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="inheritTask01">
+  <ClassDiagramComponents>
+    <Class name="Animal" package="inherittask01.entity" visibility="public" xPosition="444.0" yPosition="96.0">
+      <Fields>
+        <Field name="name" type="String" visibility="protected"/>
+        <Field name="food" type="String" visibility="protected"/>
+        <Field name="age" type="Integer" visibility="protected"/>
+        <Field name="breed" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="food"/>
+          <Argument type="Integer" name="age"/>
+          <Argument type="String" name="breed"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getFood" returnType="String" visibility="public"/>
+        <Method name="setFood" returnType="void" visibility="public">
+          <Argument type="String" name="food"/>
+        </Method>
+        <Method name="getAge" returnType="Integer" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="Integer" name="age"/>
+        </Method>
+        <Method name="getBreed" returnType="String" visibility="public"/>
+        <Method name="setBreed" returnType="void" visibility="public">
+          <Argument type="String" name="breed"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cat" package="inherittask01.entity" visibility="public" xPosition="477.0" yPosition="531.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="food"/>
+          <Argument type="Integer" name="age"/>
+          <Argument type="String" name="breed"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getFood" returnType="String" visibility="public"/>
+        <Method name="setFood" returnType="void" visibility="public">
+          <Argument type="String" name="food"/>
+        </Method>
+        <Method name="getAge" returnType="Integer" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="Integer" name="age"/>
+        </Method>
+        <Method name="getBreed" returnType="String" visibility="public"/>
+        <Method name="setBreed" returnType="void" visibility="public">
+          <Argument type="String" name="breed"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Dog" package="inherittask01.entity" visibility="public" xPosition="87.0" yPosition="531.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="food"/>
+          <Argument type="Integer" name="age"/>
+          <Argument type="String" name="breed"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getFood" returnType="String" visibility="public"/>
+        <Method name="setFood" returnType="void" visibility="public">
+          <Argument type="String" name="food"/>
+        </Method>
+        <Method name="getAge" returnType="Integer" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="Integer" name="age"/>
+        </Method>
+        <Method name="getBreed" returnType="String" visibility="public"/>
+        <Method name="setBreed" returnType="void" visibility="public">
+          <Argument type="String" name="breed"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Horse" package="inherittask01.entity" visibility="public" xPosition="852.0" yPosition="531.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="food"/>
+          <Argument type="Integer" name="age"/>
+          <Argument type="String" name="breed"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getFood" returnType="String" visibility="public"/>
+        <Method name="setFood" returnType="void" visibility="public">
+          <Argument type="String" name="food"/>
+        </Method>
+        <Method name="getAge" returnType="Integer" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="Integer" name="age"/>
+        </Method>
+        <Method name="getBreed" returnType="String" visibility="public"/>
+        <Method name="setBreed" returnType="void" visibility="public">
+          <Argument type="String" name="breed"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InheritTask01" package="inherittask01" visibility="public" xPosition="67.0" yPosition="79.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Animal_Service" package="inherittask01.service" visibility="public" isAbstract="true" xPosition="1459.0" yPosition="297.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="feed" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="Animal" name="animal"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="feed_Service" package="inherittask01.service" visibility="public" xPosition="1459.0" yPosition="514.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="feed" returnType="void" visibility="public">
+          <Argument type="Animal" name="animal"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="inherittask01.service.feed_Service" target="inherittask01.service.Animal_Service"/>
+    <UseRelation source="inherittask01.service.feed_Service" target="inherittask01.entity.Animal" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="inherittask01.service.Animal_Service" target="inherittask01.entity.Animal" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="inherittask01.entity.Dog" target="inherittask01.entity.Animal"/>
+    <IsRelation name="is" source="inherittask01.entity.Cat" target="inherittask01.entity.Animal"/>
+    <IsRelation name="is" source="inherittask01.entity.Horse" target="inherittask01.entity.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
